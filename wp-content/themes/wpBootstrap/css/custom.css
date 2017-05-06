@@ -1,0 +1,349 @@
+/******************* Fonts **********************/
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('../fonts/Roboto-Regular.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+/******************* should have **********************/
+body {
+    background: #ffffff;
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+* {
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+}
+
+a:hover, a:focus, a:visited {
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
+.right {
+    float: right !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.center {
+    text-align: center;
+}
+
+.z-depth-1, .btn {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.z-depth-2 {
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+}
+
+.z-depth-3 {
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+}
+
+.z-depth-4, .modal {
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+}
+
+.z-depth-5 {
+    box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.3);
+}
+
+.grey {
+    background: #f4f4f4;
+    color: #696969;
+}
+
+
+.row-padding {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.col-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/******************* Header **********************/
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #3b3b3b;
+}
+
+.navbar-default .navbar-brand {
+    color: #3b3b3b;
+}
+
+.navbar {
+    margin-bottom: 0; 
+}
+
+
+/******************* Main Page **********************/
+.usp-image {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.usp-image img {
+    width: 90%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+}
+
+.usp-image h2 {
+    display: block;
+    position: absolute;
+    top: 40px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #f8f8f8;
+    text-shadow: none;
+    transition: all 200ms ease-in-out;
+}
+
+
+.usp-image:hover h2 {
+    text-shadow: 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Carousel */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0;
+    margin-right: -19px;
+}
+
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    min-height: 300px;
+}
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote p:before {
+    content: "\f347";
+    font-family: 'Ionicons';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+
+.card {
+    padding-bottom: 10px;
+    margin: 10px auto 10px;
+}
+
+
+
+/******************* Bootstrap Override **********************/
+.btn {
+    border: none;
+    border-radius: 0;
+}
+
+.btn-default:hover {
+    color: #3b3b3b;
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 30px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 0;
+}
+
+.btn[class^="hvr"] {
+    background: #ffff00 !important;
+}
+
+/******************* Footer **********************/
+.myFooter {
+    background-color: #3a3f46;
+    color: white;
+}
+
+.myFooter .row {
+    margin-bottom: 60px;
+}
+
+.myFooter .info {
+    text-align: justify;
+    color: #afb0b1;
+}
+
+.myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+.myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.myFooter .logo {
+    margin-top: 10px;
+}
+
+.myFooter .second-bar .logo a {
+    color: white;
+    font-size: 28px;
+    float: left;
+    font-weight: bold;
+    line-height: 68px;
+    margin: 0;
+    padding: 0;
+}
+
+.myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+.myFooter a:hover,
+.myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.myFooter .second-bar {
+    text-align: center;
+    background-color: #33373e;
+}
+
+.myFooter .second-bar a {
+    font-size: 22px;
+    color: #9fa3a9;
+    transition: 0.2s;
+    width: 40px;
+    display: inline-block;
+    margin-top: 13px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.myFooter .second-bar a:hover {
+    text-decoration: none;
+}
+
+.myFooter .social-icons {
+    float: right;
+}
+
+
+.myFooter .facebook:hover {
+    background: #0077e2;
+    color: #fff;
+}
+
+.myFooter .google:hover {
+    background: #ef1a1a;
+    color: #fff;
+}
+
+.myFooter .twitter:hover {
+    background: #00aced;
+    color: #fff;
+}
+
+.myFooter .youtube:hover {
+    background: #ef2724;
+    color: #fff;
+}
+
+.myFooter .instagram:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#b13363 65%,#3F51B5 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#b13363 65%,#3F51B5 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#b13363 65%,#3F51B5 100%);
+    color: #fff;
+}
+
+
+
+
+
